@@ -77,6 +77,7 @@ group :development, :test do
   gem 'capybara'
   gem 'selenium-webdriver'
 
+  gem 'letter_opener_web'
 end
 
 group :development do
@@ -88,6 +89,7 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+
 end
 
 group :test do
