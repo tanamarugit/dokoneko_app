@@ -2,6 +2,8 @@
 #
 
 Rails.application.routes.draw do
+  root 'homes#index'
+
   if Rails.env.development?
     mount LetterOpenerWeb::Engine, at: "/letter_opener"
   end
@@ -12,4 +14,5 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   resources :users, only: [:new, :create, :show, :edit, :update]
+  resources :posts
 end

@@ -1,0 +1,11 @@
+<h1>どこねこ投稿画面</h1>
+
+<%= form_with model: @post, local: true do |f| %>
+  <div>
+    <%= f.file_field :image %>
+  </div>
+  <div>
+    <%= f.text_area :caption %>
+  </div>
+  <%= f.submit "Submit", disable_with: 'Submiting...' %>
+<% end %>

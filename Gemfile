@@ -74,8 +74,6 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'shoulda-matchers'
   gem 'rails-controller-testing'
-  gem 'capybara'
-  gem 'selenium-webdriver'
 
   gem 'letter_opener_web'
 end
