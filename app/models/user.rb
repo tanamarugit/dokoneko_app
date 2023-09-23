@@ -34,4 +34,5 @@ class User < ApplicationRecord
   validates :name, presence: true
 
   has_many :posts
+  has_one :spot
 end
